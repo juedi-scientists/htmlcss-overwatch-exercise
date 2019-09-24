@@ -1,0 +1,646 @@
+html{
+    font-size: 10px;
+}
+body{
+    color: #333;
+    fill: #333;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #f0edf2;
+    max-width: 100%;
+    /* font-size: 10px; */
+    height: 1000px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+a{
+    text-decoration: none;
+    line-height: inherit;
+    /* font-size: inherit; */
+}
+.button, button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    border-radius: 2px;
+    padding: 10px 45px;
+    text-transform: none;
+    border: none;
+    outline: 0;
+    border: 3px solid #ff9c00;
+    background-color: #ff9c00;
+    color: #333;
+    line-height: 1;
+    letter-spacing: .025em;
+    font-weight: 700;
+    font-size: 1.6rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    text-shadow: none;
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+p{
+    line-height: 1.6;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+a img{
+    border: 0;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+/* top部分start */
+.top{
+    position: relative;
+}
+/* sub-banner部分start */
+.sub-banner{
+    position: relative;
+    z-index: -100;
+    /* width: 100%;
+    height: 600px; */
+}
+.sub-banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* width: 100%;
+    height: 644px; */
+    min-width: 100%;
+    max-height: 654px; 
+    object-fit: fill;/* 此属性使视频平铺  */
+    
+}
+/* site-nav部分start */
+.site-nav{
+    position: relative;
+    top: 0;
+    line-height: 40px;
+    height: 40px;
+    max-width: 1600px;
+    padding: 0 40px;
+    background-color: rgba(0, 0, 0, .7);
+}
+.site-nav a.logo{
+    float: left;
+    display: inline-block;
+    width: 61.82px;
+    height: 40px;
+    background: url("https://blz.nosdn.127.net/1/fsbnet/icon-sprite.png")no-repeat -18px -75px;
+}
+.site-nav a{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 30px;
+    
+}
+.site-nav a .word{
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 0 0 15px #fff,0 0 30px rgba(255,255,255,.3);
+}
+.site-nav a .normal-word{
+    float: left;
+    color: rgba(255, 255, 255, .7);
+    font-size: 15px;
+}
+.site-nav a .icon{
+    background: url("https://blz.nosdn.127.net/1/fsbnet/icon-sprite.png")no-repeat -147px -131px;
+    width: 14px;
+    height: 7px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 18px;
+}
+.site-nav a:hover .normal-word{
+    color: white;
+}
+/* nav-bars部分start */
+.nav-bars{
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    background: #f2f1ed;
+}
+.nav-bars .nav-bars-logo{
+    float: left;
+    display: inline-block;
+    width: 53px;
+    height: 48px;
+    border: 1px solid #4b535b;
+    background: url("https://overwatch.nosdn.127.net/1/assets/img/logos/nav_logo_new.jpg")no-repeat ;
+    margin-top: -1px;
+}
+.nav-bars ul{
+    margin: 0;/* 此处将ul设置成为margin0可在chrome浏览器正常显示 */
+    height: 48px;
+    float: left;
+    font-size: 0;
+    padding: 0;
+    /* text-align: center; */
+}
+.nav-bars ul li{
+    float: left;
+    height: 48px;
+}
+.nav-bars ul li a{
+    display: inline-block;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 48px;
+    font-size: 16px;
+    color: #4b535d;
+    letter-spacing: .05em;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    border-right: 1px solid #e5e3dc;
+    max-width: auto;
+    /* display: flex;
+    flex-flow: row; */
+}
+.nav-bars ul li a.lofo{
+    padding: 0 40px 0 20px;
+}
+.nav-bars ul li:hover a{
+    color: #F7931E;
+    background: #4b535d;
+}
+.nav-bars ul li a.lofo:hover i.ign{
+    background-position: 0 -8px;
+}
+.nav-bars ul a i{
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 8px;
+    margin: 22px 20px 0 8px;
+    background: url("https://overwatch.nosdn.127.net/1/assets/img/icons/menus/nav_arrow.png")no-repeat;
+    vertical-align: middle;
+}
+.nav-bars .fr a{
+    height: 48px;
+    line-height: 48px;
+    padding: 0 40px;
+    background: #F7931E;
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .05em;
+}
+/* banner-con部分start */
+.banner-con{
+    position: relative;
+    margin: 267px auto 0 auto;
+    width: 50vmin;
+    min-width: 370px;
+}
+.banner-con img{
+    width: 50vmin;
+    min-width: 350px;
+    text-align: center;
+    padding-left: 10px; 
+}
+.banner-con .banner-con-container{
+    margin-top: 28px;
+}
+.banner-con .banner-con-container a{
+    margin: 0 10px;
+    padding: 12px 46px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .025em;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+}
+.banner-con-container-bl{
+    background: #00a5e2;
+    border-radius: 2px;
+}
+.banner-con-container-org{
+    background: #ff9c00;
+    border-radius: 2px;
+}
+/* circuit部分start */
+.circuit{
+    display: inline-block;
+    left: 40px;
+    margin-top: 169px;
+    margin-left: 40px;
+}
+.circuit-logo{
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background: url("https://overwatch.nosdn.127.net/1/assets/img/icons/menus/video_control_icon.png")no-repeat;
+}
+.circuit-word{
+    float: left;
+    display: inline-block;
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    /* vertical-align: middle; */
+
+}
+/* circuit部分end */
+/* center部分start */
+.center{
+    width: 100%;
+    padding: 45px 0 30px 0;
+    /* position: relative; */
+}
+.center-container{
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 100%;
+}
+.center-container h2{
+    display: inline-block;
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 30px;
+}
+.center-logo-content{
+    float: left;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 31.333%;
+    overflow: hidden;
+}
+.center-logo-content .back{
+    display: block;
+    z-index: -1;
+    /* background: url("https://overwatch.nosdn.127.net/a/images/2019/8/19/966b273c4ebbe72affd68aba668e918b.jpg")no-repeat; */
+    width: 370.867px;
+    height: 205.033px;
+    /* background-size: cover;
+    box-sizing: border-box;
+    background-position: center center; */
+}
+.center-logo-content .back1{
+    background: url("https://overwatch.nosdn.127.net/a/images/2019/8/19/966b273c4ebbe72affd68aba668e918b.jpg")no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center center;
+}
+.center-logo-content .back2{
+    background: url("https://overwatch.nosdn.127.net/a/images/2019/6/5/f6782bb64acd59536c15d6adf9463d67.jpg")no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center center;
+}
+.center-logo-content .back3{
+    background: url("../img/dazhe.jpg")no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center center;
+}
+.center-logo-content .content{
+    width: 80%;
+    height: 24px;
+    line-height: 0px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .75);
+    padding: 15px 20px;
+}
+.center-logo-content .content h3 a{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    /* height: 24px;
+    line-height: 24px; */
+}
+.center-search{
+    display: block;
+    float: left;
+    margin-left: 483px;
+    text-align: center;
+    padding: 7.5px 65px;
+    background: #00a5e2;
+    height: 20px;
+    /* position: absolute;
+    bottom: 0; */
+    border-radius: 2px;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 700;
+    /* line-height: 1; */
+    letter-spacing: .025em;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 20px;
+}
+/* center部分end */
+/* news部分start */
+    .news{
+        display: block;
+        width: 100%;
+        background: url("../img/new-coverage.jpg")no-repeat top center;
+        background-size: cover;
+        height: 436.6px;
+    }
+    .news .coverage{
+        height: 222.6px;
+        width: 759.6px;
+        float: right;
+        text-align: left;
+        margin-top: 159px;
+    }
+    .news .coverage h2{
+        font-weight: 400;
+        color: rgb(84, 88, 99);
+        font-size: 48px;
+        font-style: italic;
+        letter-spacing: .8px;
+        line-height: normal;
+        margin: 0;
+    }
+    .news .coverage .p1{
+        font-size: 24px;
+        color: rgb(78, 100, 149);
+        margin: 0 0 .3em;
+        display: inline-block;
+    }
+    .news .coverage .p2{
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 32em;
+        margin: 0; 
+        display: block; 
+        margin-bottom: 25px;
+    }
+    .news .coverage a{
+        /* margin-top: 50 px; */
+        padding: 6px 30px;
+        font-size: 20px;
+        color:#fefefe;
+        background-color: #ff9c00;
+        border: 3px solid #ff9c00;
+        font-weight: 700;
+        border-radius: 2px;
+        letter-spacing: .025px;
+
+    }
+/* news部分end */
+/* hero部分start */
+    .hero{
+        padding-top: 80px;
+        background: url("../img/hero.jpg")no-repeat top center;
+        background-size: cover;
+        padding-bottom: 100px;
+    }
+    .hero-container{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .hero-container-header{
+        width: 100%;
+        max-width: 1250px;
+        padding: 0 30px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .hero-container-header h2{
+        margin:0 0 44px 0;
+        font-style: initial;
+        font-weight: 400;
+        font-size: 5.8rem;
+    }
+    .hero-container-header .intro-text{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        line-height: 1.47;
+        font-size: 2.4rem;
+        font-weight: 400;
+        /* display: inline-block; */
+    }
+    .hero-container-full{
+        position: relative;
+    }
+    .hero-container-full-items{
+        width: 100%;
+        min-height: 200px;
+        position: absolute;
+        padding: 10px 0 15px;
+        top: calc(50% - 100px);
+        background-image: linear-gradient(90deg,rgba(42,55,81,0) 0,rgba(42,55,81,.8) 25%,rgba(42,55,81,.8) 75%,rgba(42,55,81,0));
+    }
+/* hero部分end */
+/* purchase部分start */
+ .purchase{
+     height: 279.2px;
+     text-align: center;
+     position: relative;
+     border-top: 1px solid hsla(0,0%,100%,.4);
+     background: url("../img/purchase.jpg");
+     background-size: cover;
+     background-position: 50%;
+ }
+ .purchase-img{
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     width: 680px;
+     height: 370px;
+     background:url("../img/purchase-img.png")
+ }
+ .purchase-content{
+     width: 80%;
+     height: 100%;
+     position: relative;
+     margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+ }
+ .purchase-content h2{
+     font-size: 5.8rem;
+     line-height: normal;
+     font-weight: 400;
+     font-style: italic;
+     letter-spacing: .8px;
+     margin-bottom: 0;
+ }
+ .purchase-content p{
+     line-height: 1.47;
+     font-size: 2.4rem;
+     margin-top: 12px;
+     margin-bottom: 20px;
+ }
+ .purchase-content a{
+     padding:  6px 30px;
+     color: #fefefe;
+     font-size: 2rem;
+ }
+/* purchase部分end */
+/* footer部分start */
+ .footer{
+     width: 100%;
+     height: 358px;
+     background: #202020;
+     position: relative;
+    font-size: 12px;
+    padding-top: 57px;
+ }
+ .footer-container{
+     margin: 0 auto;
+     max-width: 1000px;
+ }
+ .footer-business{
+     margin-bottom: 50px;
+ }
+ .footer-business p{
+     margin: 0;
+     float: left;
+     font-size: 14px;
+     line-height: 1.6;
+ }
+ .footer-business p a{
+     float: left;
+     margin-right: 37px;
+     color: #fff;
+ }
+ .footer-business p a span{
+    float: left;
+    display: block; 
+    width: 24px;
+     height: 24px;
+     margin-right: 10px;
+     background: url("../img/footer-icon.png")no-repeat;
+ }
+ .footer-business p a span.icon1{
+    background-position: -96px 0;
+}
+ .footer-business p a span.icon2{
+     background-position: -144px -24px;
+ }
+ .footer-business p a span.icon3{
+    background-position: -24px -119px;
+}
+.footer-content{
+    position: relative;
+    width: 1000px;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);  
+    padding-bottom: 20px;
+}
+.footer-content .f-c-left{
+    float: left;
+}
+.f-c-left a{
+    display: block;
+    float: left;
+}
+.f-c-left .logo-1{
+    background: url("../img/f-logo1.png")no-repeat;
+    width: 140px;
+    height: 80px;
+    padding-top: 5px;
+    float: left;
+}
+.f-c-left .logo-2{
+    width: 125px;
+    height: 38px;   
+    background: url("../img/f-logo2.png")no-repeat;
+    margin-top: 36px;
+    padding-top: 5px;
+    float: left;
+}
+.info{
+    width: 706px;
+    float: right;
+    text-align: left;
+    padding: 0 0 0 73px;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+    /* margin-left: 73px; */
+}
+.info ul{
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+    list-style: none;
+    margin-left: -10px;
+    /* line-height: 1.6; */
+}
+.info ul li{
+    float: left;
+    color: #ccc;
+    /* text-align: left; */
+}
+.footer-content .info ul li a{
+    /* padding: 0 10px; */
+    color: #ccc;
+    font-size: 14px;
+    padding: 0 10px;
+
+    /* display: inline-block; */
+}
+.footer .info p{
+    font-size: 12px !important;
+    font-weight: 400;
+    margin: 0;
+    line-height: 20px;
+    color: rgba(255, 255, 255, .5);
+    vertical-align: top;
+    /* padding: 0; */
+}
+.info p a{
+    padding-top: 5px;
+    margin-right: 5px;
+    /* display: block; */
+    /* width: 27px;
+    height: 16px; */
+    /* float: left; */
+    text-align: left;
+}
+.info .inter{
+    padding: 8px 0;
+    vertical-align: top;
+}
+.footer-container .tips{
+    text-align: center;
+    color: rgba(255, 255, 255, .3);
+}
+/* footer部分end */
